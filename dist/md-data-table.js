@@ -1044,7 +1044,7 @@
                         mdtRowCtrl.addToRowDataStorage(clone, attributes);
                     }else{
                         //TODO: better idea?
-                        var cellValue = $interpolate(clone.html())($scope.$parent);
+                        var cellValue = $interpolate(clone.html())($scope);
 
                         mdtRowCtrl.addToRowDataStorage(cellValue, attributes);
                     }
